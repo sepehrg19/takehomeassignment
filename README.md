@@ -46,6 +46,42 @@ Unfortunately, I was unable to get the chef client to work on my machine. I had 
 
 ### Security
 
+I installed Docker Desktop for Windows on my laptop.
+
+I installed the git CLI on my machine and ran the following:
+
+git clone https://github.com/marko999/metasploit2-docker.git
+
+This cloned the Dockerfile and README.md to my directory
+
+I then opened up Powershell and changed to the directory where the Dockerfile was and created the image by running the following:
+
+docker build -t sepehr_metasploit .
+
+![image](https://user-images.githubusercontent.com/81540260/114559837-fd732380-9c20-11eb-8f12-2ee45c3b84da.png)
+
+Then ran the following to run the container:
+
+docker run --name sepehr_container -it sepehr_metasploit 
+
+![image](https://user-images.githubusercontent.com/81540260/114564490-36ad9280-9c25-11eb-84c5-c45f4dbd9148.png)
+
+This is where I had issues. I needed to run a docker scan, however the results below showed that there were no vulnerabilities
+, but in the assignment, it says that I need to list out 2 vulnerabilities
+
+![image](https://user-images.githubusercontent.com/81540260/114565137-d79c4d80-9c25-11eb-8aa6-9470334ce338.png)
+
+I then checked to see if there are any services running by running the following:
+
+docker service ls
+docker ps -a
+
+![image](https://user-images.githubusercontent.com/81540260/114565482-28ac4180-9c26-11eb-9666-d47c9019e5e6.png)
+
+But this did not return any services to me
+
+I tried to do various things such as restarting docker, building a new image/container, trying different docker command switches, but to no avail, and unfortunately this was the farthest I could make it with this question
+
 
 
 
