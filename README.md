@@ -74,6 +74,7 @@ This is where I had issues. I needed to run a docker scan, however the results b
 I then checked to see if there are any services running by running the following:
 
 docker service ls
+
 docker ps -a
 
 ![image](https://user-images.githubusercontent.com/81540260/114565482-28ac4180-9c26-11eb-9666-d47c9019e5e6.png)
