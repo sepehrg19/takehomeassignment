@@ -14,7 +14,7 @@ Part 1: Takes input for hostname, start port, and end port, then uses the netcat
 
 Part 2: Takes input for filename in the current directory, the regex, and the replacement string, then use the sed command (stream editor, used to do things like search, replace, insert, and delete), to replace the regex with the replacement string.
 
-Part 3: Takes input for filename, a string, and the line number to insert the string at. Then we go through and count the number of lines within the file. I then created a function with a while loop in it that checks while the line number is less than the line count, use the sed command to insert the string at the desired line number. Then we increase the number of lines and line count due to the insertion, and we keep doing this until we reach end of file. Then I call the function and show the file with the modified. contents
+Part 3: Takes input for filename, a string, and the line number to insert the string at. Then we go through and count the number of lines within the file. I then created a function with a while loop in it that checks while the line number is less than the line count, use the sed command to insert the string at the desired line number. Then we increase the number of lines and line count due to the insertion, and we keep doing this until we reach end of file. Then I call the function and show the file with the modified contents
 
 ### Python
 
